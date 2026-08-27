@@ -133,3 +133,39 @@ a{ color:inherit; text-decoration:none; }
   border-top: 1px dashed var(--line);
   border-bottom: 1px dashed var(--line);
 }
+
+.frame__image{
+  aspect-ratio: 16/10;
+  background-size: cover; background-position: center;
+}
+.frame__info{ padding: 20px 24px; }
+.frame__num{ font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 0.06em; }
+.frame__title{ font-family: var(--display); font-size: 1.7rem; letter-spacing: 0.02em; margin-top: 6px; }
+.frame__meta{ font-family: var(--body); font-size: 0.85rem; color: var(--ink-dim); display: block; margin-bottom: 12px; }
+.frame__cta{ font-family: var(--mono); font-size: 12px; color: var(--accent); border-bottom: 1px solid transparent; }
+.frame__cta:hover{ border-bottom-color: var(--accent); }
+
+/* ===== ABOUT / SLATE ===== */
+.about{ padding: 120px 0; border-top: 1px solid var(--line); }
+.slate{ padding: 0 56px; display:grid; grid-template-columns: 360px 1fr; gap: 56px; align-items:start; }
+.slate__board{
+  background: var(--panel); border: 2px solid var(--ink);
+  padding: 20px;
+}
+.slate__row{
+  display:flex; justify-content: space-between;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+  padding: 12px 0; border-bottom: 1px dashed var(--line);
+}
+.slate__row span:first-child{ color: var(--ink-dim); }
+.slate__row:last-child{ border-bottom:none; }
+.about__bio{ font-size: 1.05rem; color: var(--ink-dim); max-width: 60ch; line-height: 1.8; }
+
+/* ===== CONTACT ===== */
+.contact{
+  padding: 160px 24px; text-align:center; border-top: 1px solid var(--line);
+}
+.contact__tag{ font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: 0.1em; }
+.contact__title{
+  font-family: var(--display); font-size: clamp(3rem, 9vw, 6rem); line-height: 0.95; margin-top: 16px;
+}
