@@ -187,3 +187,12 @@ a{ color:inherit; text-decoration:none; }
   padding: 24px 56px; border-top: 1px solid var(--line);
   font-family: var(--mono); font-size: 11px; color: var(--ink-dim);
 }
+/* ===== RESPONSIVE ===== */
+@media (max-width: 800px){
+  .nav{ padding: 18px 20px; flex-wrap: wrap; gap: 10px; }
+  .nav__links{ gap: 18px; }
+  .section-head, .filmstrip, .slate, .footer{ padding-left: 20px; padding-right: 20px; }
+  .filmstrip{ grid-template-columns: 1fr; }
+  .slate{ grid-template-columns: 1fr; }
+  .crop{ display:none; }
+}
