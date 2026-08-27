@@ -11,4 +11,14 @@
   --body: 'Inter', sans-serif;
   --mono: 'IBM Plex Mono', monospace;
 }
+*{ box-sizing: border-box; margin:0; padding:0; }
+html{ scroll-behavior: smooth; }
 
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
