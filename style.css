@@ -1,1 +1,14 @@
+/* ===== TOKENS ===== */
+:root{
+  --bg: #0B0B0A;
+  --panel: #141412;
+  --ink: #EDEAE3;
+  --ink-dim: #8C877D;
+  --accent: #C1442D;
+  --line: rgba(237,234,227,0.12);
+
+  --display: 'Bebas Neue', sans-serif;
+  --body: 'Inter', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+}
 
