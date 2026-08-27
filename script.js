@@ -11,3 +11,11 @@ function tick(){
 setInterval(tick, 1000);
 
 // Reveal frames on scroll
+const frames = document.querySelectorAll('.frame');
+const frameObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting){
+      setTimeout(() => entry.target.classList.add('in-view'), i * 80);
+      frameObserver.unobserve(entry.target);
+    }
+  });
