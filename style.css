@@ -53,3 +53,12 @@ a{ color:inherit; text-decoration:none; }
   padding: 24px 56px;
   background: linear-gradient(to bottom, rgba(11,11,10,0.9), transparent);
 }
+.nav__rec{
+  display:flex; align-items:center; gap: 8px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--accent);
+}
+.rec-dot{
+  width: 7px; height:7px; border-radius:50%; background: var(--accent);
+  animation: blink 1.4s ease-in-out infinite;
+}
+
