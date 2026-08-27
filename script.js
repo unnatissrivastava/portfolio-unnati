@@ -19,3 +19,5 @@ const frameObserver = new IntersectionObserver((entries) => {
       frameObserver.unobserve(entry.target);
     }
   });
+}, { threshold: 0.15 });
+frames.forEach(f => frameObserver.observe(f));
