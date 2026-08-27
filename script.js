@@ -8,3 +8,6 @@ function tick(){
   const s = String(seconds%60).padStart(2,'0');
   clockEl.textContent = `${h}:${m}:${s}`;
 }
+setInterval(tick, 1000);
+
+// Reveal frames on scroll
